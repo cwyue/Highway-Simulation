@@ -142,9 +142,10 @@ class UI (object):
             ax.spines['bottom'].set_visible(False)
         if self.set_traffic_jam_mode.cget("text") == "ON":
             self.figure.add_subplot (111).scatter ([1215, 1250],[1725, 1762], s=40, color="black", marker="x")
-            self.figure.legend(["Lane 0","Lane 1","Lane 2","Lane 3","Lane 4","Merge 0","Merge 1","Exit", "Accident"], loc="lower left", bbox_to_anchor=(0.05,0.05))
+            # self.figure.legend(["Lane 0","Lane 1","Lane 2","Lane 3","Lane 4","Merge 0","Merge 1","Exit", "Accident"], loc="lower left", bbox_to_anchor=(0.05,0.05))
         else:
-            self.figure.legend(["Lane 0","Lane 1","Lane 2","Lane 3","Lane 4","Merge 0","Merge 1","Exit"], loc="lower left", bbox_to_anchor=(0.08,0.08))
+            pass
+            # self.figure.legend(["Lane 0","Lane 1","Lane 2","Lane 3","Lane 4","Merge 0","Merge 1","Exit"], loc="lower left", bbox_to_anchor=(0.08,0.08))
         
         fig = self.figure.gca()
         # ax.spines['right'].set_visible(False)
